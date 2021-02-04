@@ -81,7 +81,11 @@ Provides computer vision analytics using multiple FOSCAM on Jetson Nano and SQLi
     •	Once Jetson Nano environment is setup 
     •	Download the repository into Jetson Nano 
     •	Provide appropriate permissions to the folder for storing images and database 
+    •	Uncomment CameraStream & myCamX and update with camera credentials and IP address in Main.py
     •	Run the Main.py
+    •	If you need to run different pretrained model, uncomment appropriate models under 
+             "pretrained models" and "execute for each pretrained"  
+
 
 # Conclusion 
     This script can be used to collect object detection of the environment being analyzed for. By placing the multiple 
