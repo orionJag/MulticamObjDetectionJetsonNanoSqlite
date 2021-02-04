@@ -35,6 +35,7 @@ def plot_ObjDetectCount():
     plt.xlabel('Item Desc')
     plt.ylabel('Item Count')
     plt.savefig('Plots/Items_Detected1.jpeg')
+    plt.close()
     #plt.show() 
 
     # Plot the distribution curve
@@ -43,6 +44,7 @@ def plot_ObjDetectCount():
     #plt.legend(title="Object Detections")
     plt.grid(True)
     plt.savefig('Plots/Items_Detected2.jpeg')
+    plt.close()
 
 # Plot details 
 def plot_ObjDetectCount_Time():
@@ -65,7 +67,8 @@ def plot_ObjDetectCount_Time():
     plt.title("Object Detected over Multiple Cycles")
     #plt.legend()
     plt.grid(True)
-    plt.savefig('Plots/Items_Detected3.jpeg')    
+    plt.savefig('Plots/Items_Detected3.jpeg')
+    plt.close()
 
 
     # Jetson Statistics (Temp)
@@ -105,6 +108,7 @@ def plot_ObjDetectCount_Time():
     plt.grid(True)
     plt.savefig('Plots/JetsonTemp.jpeg')
     #plt.show()
+    plt.close()
 
     # Jetson Statistics (CPU, GPU)
     sqlStmt =  'select CrtTS, jcpu1, jcpu2, jcpu3, jcpu4, jgpu from OpnCVStats order by CrtTS' 
@@ -141,6 +145,7 @@ def plot_ObjDetectCount_Time():
     plt.legend()
     plt.grid(True)
     plt.savefig('Plots/JetsonProcs.jpeg') 
+    plt.close()
 
 
 # # plot the graphs 
