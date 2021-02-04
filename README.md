@@ -82,6 +82,8 @@ Provides computer vision analytics using multiple FOSCAM on Jetson Nano and SQLi
     •	Download the repository into Jetson Nano 
     •	Provide appropriate permissions to the folder for storing images and database 
     •	Uncomment CameraStream & myCamX and update with camera credentials and IP address in Main.py
+    •	Create a folder named "Plots" inside the project folder to house all plots and graphs
+    •	Create a folder named "Images" inside the project folder to house all Images that are captured    
     •	Run the Main.py
     •	If you need to run different pretrained model, uncomment appropriate models under 
              "pretrained models" and "execute for each pretrained"  
